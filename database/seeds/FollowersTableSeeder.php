@@ -1,7 +1,14 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: kkham
- * Date: 8/9/2019
- * Time: 10:23 PM
- */
+use Illuminate\Database\Seeder;
+class FollowersTableSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        //
+    }
+}

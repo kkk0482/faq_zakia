@@ -1,7 +1,7 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: kkham
- * Date: 8/9/2019
- * Time: 10:21 PM
- */
+namespace App\Http\Controllers;
+use Illuminate\Http\Request;
+class FollowerController extends Controller
+{
+    //
+}

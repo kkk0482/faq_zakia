@@ -1,7 +1,11 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: kkham
- * Date: 8/9/2019
- * Time: 10:20 PM
- */
+namespace App;
+use Illuminate\Database\Eloquent\Model;
+class Follower extends Model
+{
+    protected $fillable =  ['follower_id'];
+    public function user()
+    {
+        return $this->belongsTo('App\User');
+    }
+}

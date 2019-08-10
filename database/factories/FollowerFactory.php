@@ -1,7 +1,7 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: kkham
- * Date: 8/9/2019
- * Time: 10:22 PM
- */
+use Faker\Generator as Faker;
+$factory->define(Model::class, function (Faker $faker) {
+    return [
+        //
+    ];
+});

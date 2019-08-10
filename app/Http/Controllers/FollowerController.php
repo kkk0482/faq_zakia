@@ -19,9 +19,10 @@ class FollowerController extends Controller
     {
         if (!Auth::user()->isFollowing($user->id)) {
             // Create a new follow instance for the authenticated user
-            Auth::user()->follows()->create([
+            //Auth::user()->follows()->create([
+            Auth::user()->followers()->create([
                 'follower_id' => $user->id,
-                'name'=>$user->name,
+                //'name'=>$user->name,
             ]);
             //$user->notify(new UserFollowed(Auth()->user()) );
             $user->notify(new FollowNotified(Auth()->user()) );

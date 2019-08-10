@@ -5,8 +5,8 @@ use Illuminate\Bus\Queueable;
 use Illuminate\Notifications\Notification;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
-//class FollowNotified extends Notification
-class UserFollowed extends Notification
+class FollowNotified extends Notification
+//class UserFollowed extends Notification
 {
     use Queueable;
     /**
